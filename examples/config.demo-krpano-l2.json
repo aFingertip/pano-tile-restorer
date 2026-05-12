@@ -1,0 +1,32 @@
+{
+  "mode": "remote",
+  "outputDir": "./output/demo-krpano/demo-scene-l2",
+  "tile": {
+    "tileSize": 512,
+    "level": 2,
+    "faceSize": 2176,
+    "indexBase": 0,
+    "coordinateBase": 1,
+    "order": "row-major",
+    "faces": ["f", "b", "l", "r", "u", "d"],
+    "urlTemplate": "https://example.com/tiles/demo-scene/{face}/l{level}/{row}/l{level}_{face}_{row}_{col}.jpg?t=1234567890"
+  },
+  "request": {
+    "headers": {
+      "user-agent": "Mozilla/5.0"
+    },
+    "concurrency": 4,
+    "retry": 2,
+    "timeoutMs": 15000,
+    "delayMs": 0
+  },
+  "output": {
+    "faceFormat": "jpg",
+    "quality": 95,
+    "createCubemap3x2": true,
+    "createCubemap6x1": true,
+    "createEquirectangular": true,
+    "ffmpegPath": "ffmpeg",
+    "equirectangularWidth": 8704
+  }
+}

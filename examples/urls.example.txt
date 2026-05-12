@@ -1,0 +1,4 @@
+https://example.com/tiles/l3_f_0.jpg?t=1234567890
+https://example.com/tiles/l3_f_1.jpg?t=1234567890
+https://example.com/tiles/l3_r_4.jpg?t=1234567890
+https://example.com/tiles/demo-scene/f/l2/3/l2_f_3_4.jpg?t=1234567890

@@ -1,0 +1,21 @@
+{
+  "mode": "local",
+  "outputDir": "./output/local-scene",
+  "tile": {
+    "tileSize": 512,
+    "level": 3,
+    "faceSize": 2048,
+    "indexBase": 0,
+    "coordinateBase": 0,
+    "order": "row-major",
+    "faces": ["f", "b", "l", "r", "u", "d"],
+    "localPattern": "./tiles/l{level}_{face}_{index}.jpg"
+  },
+  "output": {
+    "faceFormat": "png",
+    "quality": 95,
+    "createCubemap3x2": true,
+    "createCubemap6x1": false,
+    "createEquirectangular": false
+  }
+}

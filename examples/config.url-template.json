@@ -1,0 +1,30 @@
+{
+  "mode": "remote",
+  "outputDir": "./output/factory-gate",
+  "tile": {
+    "tileSize": 512,
+    "level": 3,
+    "faceSize": 2048,
+    "indexBase": 0,
+    "coordinateBase": 0,
+    "order": "row-major",
+    "faces": ["f", "b", "l", "r", "u", "d"],
+    "urlTemplate": "https://example.com/tiles/l{level}_{face}_{index}.jpg?t=1234567890"
+  },
+  "request": {
+    "headers": {
+      "user-agent": "Mozilla/5.0"
+    },
+    "concurrency": 6,
+    "retry": 3,
+    "timeoutMs": 15000,
+    "delayMs": 0
+  },
+  "output": {
+    "faceFormat": "jpg",
+    "quality": 95,
+    "createCubemap3x2": true,
+    "createCubemap6x1": true,
+    "createEquirectangular": false
+  }
+}

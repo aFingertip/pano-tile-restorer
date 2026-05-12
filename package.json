@@ -1,0 +1,39 @@
+{
+  "name": "pano-tile-restorer",
+  "version": "0.1.0",
+  "description": "Authorized panorama tile downloader and cubemap restorer.",
+  "type": "module",
+  "bin": {
+    "pano-tile-restorer": "./dist/index.js"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "commander": "^14.0.2",
+    "execa": "^9.6.0",
+    "fast-glob": "^3.3.3",
+    "p-limit": "^7.2.0",
+    "sharp": "^0.34.5",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3",
+    "vitest": "^4.0.8"
+  }
+}

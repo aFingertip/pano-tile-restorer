@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+output/
+.DS_Store
+*.log
+pano.config.local.json
